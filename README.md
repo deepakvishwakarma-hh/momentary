@@ -1,4 +1,7 @@
-# Momentary
+# Momentary PWA
+
+phase : Developing...
+
 >Like its name, it is a short period chatting application.
 You can start chatting by configuring your room in the app.
 
