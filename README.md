@@ -1,11 +1,15 @@
 # Momentary PWA
 
+![image](https://user-images.githubusercontent.com/79501955/158926787-b1429420-2efb-4005-a0cb-e327c7f9bc6e.png)
+
 phase : Developing...
 
 >Like its name, it is a short period chatting application.
 You can start chatting by configuring your room in the app.
 
->[Click to visit Momentary](https://momentary.vercel.app/ "click to visit momentary")
+>[Click to visit Momentary](https://myn.vercel.app/ "click to visit momentary")
+
+
 
 
 **Project Detail**
