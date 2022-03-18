@@ -56,7 +56,7 @@ export default function Room() {
             <Validator>
                 <Loader target={loader} />
                 {(testRoom) ?
-                    <Flex width={"100%"} height={"100%"} position={"fixed"} fontFamily={"Questrial"} userSelect={"none"} justifyContent="center" alignItems={['start', "center"]} bgImage="/h2.svg" bgSize={'cover'}>
+                    <Flex minW={"100%"} minH={"100%"} position={"fixed"} fontFamily={"Questrial"} userSelect={"none"} justifyContent="center" alignItems={['start', "center"]} bgImage="/h2.svg" bgSize={'cover'}>
                         <Setting />
                         <Grid opacity={.8} w={1200} h={['100%', 800]} overflow={"hidden"} bg={"black"} borderRadius={['0', 10]} templateRows={'70px auto 100px'}>
                             <Header />
