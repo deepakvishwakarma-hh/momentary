@@ -5,7 +5,7 @@ phase : Developing...
 >Like its name, it is a short period chatting application.
 You can start chatting by configuring your room in the app.
 
->[Click to visit Momentary](https://momentary.vercel.app/ "click to visit momentary")
+>[Click to visit Momentary](https://myn.vercel.app/ "click to visit momentary")
 
 
 **Project Detail**
