@@ -34,6 +34,9 @@ export default function Setting() {
     const shareableLink = `https://momentary.vercel.app/room/${state.currentRoomId}`;
     const clickToCopyHandler: () => void = () => { navigator.clipboard.writeText(shareableLink) };
 
+    const shareableKey = `${state.currentRoomId}`;
+    const clickToCopyKeyHandler: () => void = () => { navigator.clipboard.writeText(shareableLink) };
+
     useEffect(() => {
         const interval: NodeJS.Timeout = setInterval(() => {
             setTime(+Date.now() - lastlongtime)
@@ -117,7 +120,7 @@ export default function Setting() {
                                             fontSize={15}
                                             color={'purple.500'}
                                             py={2}
-                                            textTransform={"uppercase"}>Invitation Link </Text>
+                                            textTransform={"uppercase"}>Invitations </Text>
                                         <AccordionIcon />
                                     </AccordionButton>
                                 </h2>
@@ -127,7 +130,7 @@ export default function Setting() {
                                         fontSize={13}
                                         color={'white.500'}
                                         py={2}
-                                        textTransform={"uppercase"}>Invite via link.</Text>
+                                        textTransform={"uppercase"}>link</Text>
                                     <Flex mb={3}
                                         alignItems={"center"}>
                                         <Input
@@ -144,6 +147,33 @@ export default function Setting() {
                                             variant='outline'
                                             colorScheme='purple'
                                             onClick={clickToCopyHandler}
+                                            _hover={{ opacity: .8 }}
+                                            _focus={{ opacity: .8 }}
+                                        > COPY</Button>
+                                    </Flex>
+
+                                    <Text
+                                        letterSpacing={3}
+                                        fontSize={13}
+                                        color={'white.500'}
+                                        py={2}
+                                        textTransform={"uppercase"}> Key</Text>
+                                    <Flex mb={3}
+                                        alignItems={"center"}>
+                                        <Input
+                                            my={2}
+                                            py={2}
+                                            readOnly
+                                            opacity={.5}
+                                            flex={10}
+                                            borderRadius={5}
+                                            value={shareableKey} />
+                                        <Button
+                                            ml={3}
+                                            bg="black"
+                                            variant='outline'
+                                            colorScheme='purple'
+                                            onClick={clickToCopyKeyHandler}
                                             _hover={{ opacity: .8 }}
                                             _focus={{ opacity: .8 }}
                                         > COPY</Button>
